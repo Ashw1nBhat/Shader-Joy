@@ -1,0 +1,71 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.log
+*.tlog
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+*.exe
+*.exp
+*.idb
+*.ipdb
+*.pgc
+*.pgd
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.cache
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+.DS_Store
+Thumbs.db
