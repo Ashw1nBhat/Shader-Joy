@@ -31,10 +31,18 @@ int main() {
 	glGenBuffers(1, &buffer);
 
 	glBindBuffer(GL_ARRAY_BUFFER, buffer);
-	glBufferData(buffer, sizeof(TRIANGLE_DATA), TRIANGLE_DATA, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(TRIANGLE_DATA), TRIANGLE_DATA, GL_STATIC_DRAW);
+
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, 0);
+
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)(sizeof(float) * 3));
 
 	while (!glfwWindowShouldClose(window)) {
 		glClear(GL_COLOR_BUFFER_BIT);
+
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
